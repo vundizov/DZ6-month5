@@ -6,6 +6,7 @@ const BasketPage = () => {
         <div>
             {basket.map((i)=>(
                 <div key={i._id}>
+                    <img src={i.picture} alt="img"/>
                     {i.name}
                 </div>
             ))}

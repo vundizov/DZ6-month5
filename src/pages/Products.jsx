@@ -17,6 +17,7 @@ const Products = () => {
         <div>
             {product.map((i)=> (
                 <div key={i._id}>
+                    <img src={i.picture} alt="img"/>
                     {i.name}
                     <br/>
                     <button onClick={()=>buyClick(i)}>BUY</button>
